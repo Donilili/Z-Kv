@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор Этажа</title>
+  <script src="https://kit.fontawesome.com/569f85a564.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./Main__page/preloader/preload.css">
+  <link rel="icon" href="./img/zoloto77.png">
+</head>
+<body>
+
+    <!-- Прелоадер -->
+  <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+
+  <div class="main">
+      <div class="box dark">
+          <div class="lines wood">
+              <div class="halfOfWood">
+                <div class="woodKorpus"><h3>МЕГА<br>ПЛАЗА</h3></div>
+                <div class="nazad"><i class="fa-solid fa-arrow-left"></i><span onclick="document.location='./Main__page/fullpage.html'">&nbsp назад</span></div>
+              </div>
+          </div>
+          <div class="lines etaj">
+              <div class="etajCifry">
+                  <h6>ЭТАЖ</h6>
+                  <div class="imennoEtaji" id="fifth"  onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeItem5()" onmouseout="rechangeItem5()">05</div>
+                  <div class="imennoEtaji" id="fourth" onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeItem4()" onmouseout="rechangeItem4()">04</div>
+                  <div class="imennoEtaji" id="third"  onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeItem3()" onmouseout="rechangeItem3()">03</div>
+                  <div class="imennoEtaji" id="second" onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeItem2()" onmouseout="rechangeItem2()">02</div>
+                  <div class="imennoEtaji" id="one"    onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeItem1()" onmouseout="rechangeItem1()">01</div>
+              </div>
+          </div>
+          <div class="lines map">
+              <div class="mapSvg bbb"><svg class="mapSvgMap" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 836.28504 826.39954"><defs><style>.cls-1,.cls-6,.cls-7{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:0.3;isolation:isolate;}.cls-4{clip-path:url(#clip-path-2);}.cls-5{clip-path:url(#clip-path-3);}.cls-6,.cls-7{stroke:#eebd7b;stroke-width:4.58289px;}.cls-7{stroke-linecap:round;stroke-linejoin:round;}</style><clipPath id="clip-path" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="377.367" y="0.00006" width="836.28497" height="56.59607"/></clipPath><clipPath id="clip-path-2" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="369" y="-38" width="853" height="111"/></clipPath><clipPath id="clip-path-3" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="377" width="837" height="57"/></clipPath></defs><g class="cls-2"><g class="cls-3"><g class="cls-4"><g class="cls-5"><path class="cls-6" d="M378.45718,5.82324c41.70429,22.55884,153.47171,57.52515,266.90738,16.91913,141.79456-50.75732,258.56653,20.3028,366.99768,27.07044,86.74482,5.41424,169.59882-27.0705,200.18048-43.98957" transform="translate(-377.36697 -2.29372)"/></g></g></g></g><path class="cls-7" d="M775.76176,192.04483a9.16533,9.16533,0,0,0-9.18274-9.153l-75.48334.14161a9.16437,9.16437,0,0,0-9.14746,9.17956l.41706,271.4119a9.16816,9.16816,0,0,0,9.17492,9.152l273.6493-.24292a9.15983,9.15983,0,0,0,9.15747-9.18412l-.3996-181.78436a9.16584,9.16584,0,0,0-9.18274-9.14563l-75.48016.1416a9.166,9.166,0,0,0-9.14881,9.18872l.21857,87.94242a9.16576,9.16576,0,0,1-9.174,9.18866l-86.01758-.07926a9.16586,9.16586,0,0,1-9.1571-9.15344Z" transform="translate(-377.36697 -2.29372)"/><path class="cls-7" d="M1187.14784,825.47146l-212.69449.42621-84.63129.16034a9.166,9.166,0,0,1-9.18274-9.16577l.00415-256.95331a9.1663,9.1663,0,0,1,9.14881-9.16577l75.47375-.14209a9.16571,9.16571,0,0,1,9.18317,9.17493L974.287,722.87894a9.16568,9.16568,0,0,0,9.19787,9.17492l109.73081-.385a9.16862,9.16862,0,0,0,9.1337-9.17041l-.05133-393.20431a9.16542,9.16542,0,0,1,9.14834-9.16715l75.48789-.1416a9.16565,9.16565,0,0,1,9.18295,9.15933l.15835,315.50882.211,158.10968c-.10374,12.82189.8998,20.71484-9.33871,22.70819" transform="translate(-377.36697 -2.29372)"/><path class="cls-7" d="M419.36717,548.32126,390.54075,168.54373a9.163,9.163,0,0,1,9.13831-9.85956h74.426a9.16366,9.16366,0,0,1,9.13831,8.47187l28.92725,381.06445a9.02682,9.02682,0,0,0,.3894,2.03479l54.399,174.31927a9.16138,9.16138,0,0,0,8.74865,6.439h100.104a9.16617,9.16617,0,0,0,9.16577-9.16577V558.42654a9.16325,9.16325,0,0,1,9.16577-9.16577h73.18915a9.16442,9.16442,0,0,1,9.16577,9.16577V817.23605a9.16738,9.16738,0,0,1-9.16577,9.16577H506.25413a9.17051,9.17051,0,0,1-8.80835-6.62689L419.69712,550.1636A9.29932,9.29932,0,0,1,419.36717,548.32126Z" transform="translate(-377.36697 -2.29372)"/></svg></div>
+              <div class="mapSvg aaa"><h1>ЗОЛОТОЙ<br>КВАДРАТ</h1></div>
+              <div class="mapSvg about">
+                  <div class="infoObEtaje" id="info1">
+                      <div class="bug"><h6>КОРПУС</h6><h6>МОНО 1</h6></div>
+                      <div class="bug"><h6>В ПРОДАЖЕ</h6><h6>11</h6></div>
+                      <div class="bug"><h6>ПЛОЩАДЪ</h6><h6>25 - 61</h6></div>
+                  </div>
+
+                  <div class="infoObEtaje" id="info2">
+                      <div class="bug"><h6>КОРПУС</h6><h6>МОНО 2</h6></div>
+                      <div class="bug"><h6>В ПРОДАЖЕ</h6><h6>17</h6></div>
+                      <div class="bug"><h6>ПЛОЩАДЪ</h6><h6>25 - 61</h6></div>
+                  </div>
+
+                  <div class="infoObEtaje" id="info3">
+                      <div class="bug"><h6>КОРПУС</h6><h6>МОНО 3</h6></div>
+                      <div class="bug"><h6>В ПРОДАЖЕ</h6><h6>9</h6></div>
+                      <div class="bug"><h6>ПЛОЩАДЪ</h6><h6>25 - 61</h6></div>
+                  </div>
+
+                  <div class="infoObEtaje" id="info4">
+                      <div class="bug"><h6>КОРПУС</h6><h6>МОНО 4</h6></div>
+                      <div class="bug"><h6>В ПРОДАЖЕ</h6><h6>21</h6></div>
+                      <div class="bug"><h6>ПЛОЩАДЪ</h6><h6>25 - 61</h6></div>
+                  </div>
+
+                  <div class="infoObEtaje" id="info5">
+                      <div class="bug"><h6>КОРПУС</h6><h6>МОНО 5</h6></div>
+                      <div class="bug"><h6>В ПРОДАЖЕ</h6><h6>31</h6></div>
+                      <div class="bug"><h6>ПЛОЩАДЪ</h6><h6>25 - 61</h6></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="box light">
+          <div class="cube">
+              <img class="home" src="./img/korpus11.svg" alt="">
+              <div class="korpusSvg">
+                  <svg class="inCubeSvg" width="100%" height="100%" viewBox="0 0 1137 1082" fill="-1" xmlns="http://www.w3.org/2000/svg">
+                    <path class="kursor" d="M1 4V1H3.5"           stroke="rgba(0,0,0,0.1)"/>
+                    <path class="kursor" d="M1136 3V1H1134"       stroke="rgba(0,0,0,0.1)"/>
+                    <path class="kursor" d="M1136 1079V1081H1134" stroke="rgba(0,0,0,0.1)"/>
+                    <path class="kursor" d="M1 1079V1081H3"       stroke="rgba(0,0,0,0.1)"/>
+                    <path class="kursor" id="one_one"   onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeEtaj1()" onmouseout="rechangeEtaj1()" fill = "rgba(0, 0, 0, 0)" d="M889 730.5V665.5L437 693L198 634.5V665.5L437 756L889 730.5Z"       stroke=""/>
+                    <path class="kursor" id="one_two"   onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeEtaj2()" onmouseout="rechangeEtaj2()" fill = "rgba(0, 0, 0, 0)" d="M891.5 662V595H438.5H199V631L438.5 685.5L891.5 662Z"               stroke=""/>
+                    <path class="kursor" id="one_three" onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeEtaj3()" onmouseout="rechangeEtaj3()" fill = "rgba(0, 0, 0, 0)" d="M921 591V518.5L460 495.5L200 553V592.5L460 586.5L921 591Z"         stroke=""/>
+                    <path class="kursor" id="one_four"  onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeEtaj4()" onmouseout="rechangeEtaj4()" fill = "rgba(0, 0, 0, 0)" d="M919.5 508.5V440L459.5 398L201 516V548.5L459.5 483.5L919.5 508.5Z" stroke=""/>
+                    <path class="kursor" id="one_five"  onclick="document.location='./planirovka_etaja/etaj.html'" onmouseover="changeEtaj5()" onmouseout="rechangeEtaj5()" fill = "rgba(0, 0, 0, 0)" d="M919.5 431V361L462.5 301L201.5 480.5V513.5L462.5 385.5L919.5 431Z" stroke=""/>
+                  </svg>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="./Main__page/preloader/preload.js"></script>
+  <script src="./Js/mouseOver.js"></script>
+  <script src="./Js/script.js"></script>
+</body>
+</html>

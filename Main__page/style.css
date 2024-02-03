@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Sofia+Sans:wght@100;200;300;500;600&family=Spectral+SC:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.infoHero {
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: lighter;
+    background-color: #163143;
+}
+
+
+.chooseaAndPhone {
+    position: fixed;
+    top: 5.5%;
+    margin: 1.4em;
+    width: 180px;
+    height: 25px;
+    right: 5%;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+}
+.choose {
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    border: solid 0.1rem #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    transition: all 0.5s;
+    z-index: -1;
+    overflow: hidden;
+}
+.choose::before {
+    content: "ВЫБРАТЬ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eebd7b;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    color: #000;
+}
+.choose:hover {
+    border: solid 0.1rem #eebd7b;
+}
+.choose:hover::before {
+    transform: translateX(0);
+}
+.phone {
+    width: 60%;
+    height: 100%;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    border: solid 0.1rem #fff;
+    color: #fff;
+    position: relative;
+    transition: all 0.5s;
+    z-index: -1;
+    overflow: hidden;
+}
+.phone::before {
+    content: "ЗАКАЗАТЬ ЗВОНОК";
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+    background-color: #eebd7b;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    color: #000;
+}
+.phone:hover {
+    border: solid 0.1rem #eebd7b;
+}
+.phone:hover::before {
+    transform: translateX(0);
+}
+.toggle-btn {
+    position: fixed;
+    top: 4%;
+    margin: 1.4em;
+    padding: 1em;
+    width: 40px;
+    height: 12px;
+    right: 2.5%;
+    z-index: 1;
+    cursor: pointer;
+}
+.logo {
+    position: absolute;
+    left: 10%;
+}
+.logo h6 {
+    color: #eebd7b;
+}
+.logoRight {
+    color: #eebd7b;
+    position: absolute;
+    right: 20%;
+}
+.logoRight h3 {
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+.logoEnd {
+    color: #eebd7b;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    text-align: end;
+}
+.line {
+    height: 1px;
+    border: 0;
+    background-color: rgba(238, 189, 123, 0.5);
+    margin-top: 10%;
+}
+span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+
+span.two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+}
+
+.menu {
+    z-index: 0;
+    position: absolute;
+    background: #101010;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+}
+
+.data {
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+li:first-child {
+    color: #fff;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 24px;
+}
+
+li:not(:first-child) {
+    color: #fff;
+    font-size: 42px;
+}
+
+a {
+    text-decoration: none;
+    color: #eebd7b;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 200;
+}
+#page1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+}
+/* #page2 {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero3.jpg);
+    background-size: cover;
+    background-position: center;
+ } */
+/* !!! video block */
+.bannerVideo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.opisanie {
+    width: 50%;
+    height: 100%;
+    background-color: #163143;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eebd7b;
+}
+.ob {
+    width: 30%;
+    margin-top: 7%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.ob hr {
+    width: 1px;
+    border: 0;
+    background-color: rgba(238, 189, 123, 0.8);
+}
+.ob_2 {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.ob_3 {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.7;
+}
+.ob_3 h2 {
+    font-size: 2.5rem;
+}
+.ob_4 {
+    margin-top: 5%;
+    margin-left: 10%;
+    line-height: 1.5;
+}
+.opisanie2 {
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eebd7b;
+}
+.ob_2_2 {
+    width: 30%;
+    margin-top: 7%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+.ob_3_2 {
+    width: 85%;
+    margin-top: 10%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.7;
+}
+.mix {
+    color: #fff;
+    mix-blend-mode: overlay;
+    font-size: 6rem;
+}
+.ob_4_2 {
+    margin-top: 10%;
+    margin-left: 7%;
+    line-height: 1.5;
+}
+.jizn.stili h2 {
+    position: absolute;
+    top: 72%;
+    right: 20%;
+    font-size: 6rem;
+    mix-blend-mode: overlay;
+    color: #fff;
+    z-index: 1;
+}
+.jizn h2 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 4rem;
+    mix-blend-mode: overlay;
+    color: #b9b3b7;
+    z-index: 1;
+}
+.circleVideo {
+    width:27%;
+    height: 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 150px;
+    
+}
+.bannerVideo2 .krug {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 150px;
+  }
+#page5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/plan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.midline {
+    display: flex;
+}
+.ofisProdaj {
+    width: 50%;
+    padding: 1%;
+}
+.ofisProdaj h5, h3 {
+    margin-top: 3%;
+}
+
+.inputs {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+    line-height: 2.5;
+}
+.inputs input {
+    border: 0;
+    background: 0;
+    outline: none;
+    color: #fff;
+}
+
+.inputs hr {
+    width: 70%;
+    height: 1px;
+    border: 0;
+    background-color: rgba(238, 189, 123, 0.5);
+}
+
+.foot {
+    margin-left: 10%;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foo.foo2 {
+    width: 50%;
+    display: flex;
+}
+.list {
+    width: 50%;
+}
+.list ul li {
+    font-size: 1rem;
+}
+.list ul li:hover {
+    text-decoration: underline;
+}
+#page7 {
+    background-image: linear-gradient(rgba(38, 74, 72, 0.5), rgba(38, 74, 72, 0.5)), url(../img/0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.comfort {
+    position: absolute;
+    top: 19%;
+    right: 20%;
+    font-size: 3rem;
+    mix-blend-mode: overlay;
+    color: #fff;
+}
+/* #page3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+/* #page4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/next_page.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+/* !!! media query !!! */
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .chooseaAndPhone {
+        right: 6%;
+    }
+    .logoEnd {
+        top: 17%;
+    }
+    .jizn.stili h2 {
+        right: 15%;
+    }
+    .ob {
+        width: 40%;
+    }
+    .ob_2 {
+        width: 60%;
+        font-size: 1rem;
+    }
+    .ob_3 {
+        width: 75%;
+    }
+    .ob_3 h2 {
+        font-size: 3rem;
+    }
+    .ob_4 {
+        margin-top: 10%;
+    }
+    .circleVideo {
+        width: 33%;
+        bottom: 10%;
+    }
+    .ob_2_2 {
+        width: 40%;
+    }
+    .ob_2_2 h5 {
+        font-size: 1.3rem;
+    }
+    .ob_3_2 {
+        width: 99%;
+        margin-top: 17%;
+    }
+    .numbs h4 {
+        font-size: 1.5rem;
+    }
+    .ob_4_2 {
+        margin-top: 5%;
+    }
+    .ob_4_2 h3 {
+        font-size: 1.3rem;
+    }
+    .ob_4_2 h6 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .chooseaAndPhone {
+        top: 6%;
+        right: 7%;
+    }
+    .choose {
+        font-size: 0.5rem;
+    }
+    .logoRight h3 {
+        line-height: 0.7;
+    }
+    .jizn.stili h2 {
+        font-size: 4rem;
+    }
+    .ob {
+        width: 50%;
+    }
+    .ob_2 {
+        width: 75%;
+    }
+    .ob_3 {
+        width: 85%;
+    }
+    .ob_4 {
+        margin-top: 8%;
+    }
+    .jizn h2 {
+        font-size: 2.5rem;
+    }
+    .circleVideo {
+        right: 5%;
+        height: 40%;
+        bottom: 15%;
+    }
+    .ob_2_2 {
+        width: 40%;
+    }
+    .ob_3_2 {
+        width: 95%;
+        margin-top: 15%;
+    }
+    .mix {
+        font-size: 4rem;
+    }
+    .comfort {
+        font-size: 2rem;
+    }
+    .ofisProdaj h3 {
+        font-size: 1rem;
+    }
+    .list ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+    .chooseaAndPhone {
+        top: 6%;
+        right: 10%;
+    }
+    .logo {
+        left: 5%;
+    }
+    .logoRight {
+        right: 12%;
+    }
+    .logoRight h3 {
+        line-height: 0.5;
+    }
+    .logoRight p {
+        font-size: 0.7rem;
+    }
+    .logoEnd h6 {
+        font-size: 0.4rem;
+    }
+    .jizn.stili h2 {
+        font-size: 4rem;
+        top: 70%;
+    }
+    .ob {
+        width: 85%;
+    }
+    .ob_2 {
+        width: 90%;
+        font-size: 0.7rem;
+    } 
+    .ob_3 {
+        width: 90%;
+    }
+    .ob_3 h2 {
+        font-size: 2rem;
+    }
+    .ob_3 h5 {
+        font-size: 0.7rem;
+    }
+    .ob_4 h3 {
+        display: none;
+    }
+    .jizn h2 {
+        font-size: 2rem;
+    }
+    .circleVideo {
+        width: 66%;
+        height: 40%;
+        bottom: 1%;
+    }
+    .ob_4.rotated h6 {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -18%;
+        bottom: 12%;
+    }
+    .opisanie2 {
+        width: 90%;
+    }
+    .ob_2_2 {
+        width: 65%;
+    }
+    .ob_3_2 {
+        width: 99%;
+        margin-top: 20%;
+    }
+    .mix {
+        font-size: 2.5rem;
+    }
+    .ob_4_2 {
+        margin-top: 50%;
+    }
+    .comfort {
+        font-size: 1rem;
+    }
+    .ofisProdaj h5 {
+        font-size: 0.7rem;
+    }
+    .ofisProdaj h3 {
+        font-size: 0.6rem;
+    }
+    .inputs a {
+        font-size: 0.6rem;
+    }
+    .foo.foo2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .list ul li {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 374px) {
+    .chooseaAndPhone {
+        top: 6%;
+        right: 10%;
+    }
+    .chooseaAndPhone {
+        top: 2%;
+    }
+    .toggle-btn {
+        top: 0;
+    }
+    .logoRight {
+        right: 8%;
+    }
+    .logoRight h3 {
+        font-size: 1rem;
+    }
+    .logo {
+        left: 5%;
+    }
+    .logo h6 {
+        font-size: 0.5rem;
+    }
+   
+    .logoRight h3 {
+        line-height: 0.5;
+    }
+    .logoRight p {
+        font-size: 0.7rem;
+    }
+    .logoEnd h6 {
+        font-size: 0.4rem;
+    }
+    .jizn.stili h2 {
+        font-size: 3rem;
+        top: 70%;
+    }
+    .ob {
+        width: 85%;
+        margin-left: 7%;
+    }
+    .ob h5 {
+        font-size: 0.6rem;
+    }
+    .ob_2 {
+        width: 90%;
+        font-size: 0.7rem;
+        margin-left: 7%;
+    } 
+    .ob_3 {
+        width: 90%;
+        margin-left: 7%;
+        margin-top: 10%;
+    }
+    .ob_3 h2 {
+        font-size: 1.8rem;
+    }
+    .ob_3 h5 {
+        font-size: 0.5rem;
+    }
+    .ob_4 {
+        margin-top: 8%;
+        margin-left: 7%;
+    }
+    .ob_4 h3 {
+        display: none;
+    }
+    .jizn h2 {
+        font-size: 2rem;
+    }
+    .circleVideo {
+        width: 66%;
+        height: 40%;
+        bottom: 1%;
+        right: -90%;
+    }
+   
+    .opisanie2 {
+        width: 99%;
+    }
+    .ob_2_2 {
+        width: 65%;
+    }
+    .ob_3_2 {
+        width: 99%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mix {
+        font-size: 2.5rem;
+        margin-top: 5%;
+    }
+    .ob_4_2 {
+        margin-top: 20%;
+    }
+    .opisanie.footage {
+        width: 65%;
+    }
+    .comfort {
+        font-size: 2rem;
+        right: -10%;
+        transform: rotate(90deg);
+    }
+    .ofisProdaj h5 {
+        font-size: 0.5rem;
+    }
+    .ofisProdaj h3 {
+        font-size: 0.6rem;
+    }
+    .inputs {
+        line-height: 2;
+    }
+    .inputs a {
+        font-size: 0.6rem;
+    }
+    .foo.foo2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .list ul li {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 374px) and (min-width: 320px) {
+    .chooseaAndPhone {
+        top: 2%;
+        right: 14%;
+    }
+    .toggle-btn {
+        top: 1px;
+    }
+    .logoRight {
+        right: 5%;
+    }
+    .logoRight h3 {
+        font-size: 0.7rem;
+    }
+    .logo {
+        left: 5%;
+    }
+    .logo h6 {
+        font-size: 0.5rem;
+    }
+   
+    .logoRight h3 {
+        line-height: 0.5;
+    }
+    .logoRight p {
+        font-size: 0.6rem;
+    }
+    .logoEnd h6 {
+        font-size: 0.4rem;
+    }
+    .jizn.stili h2 {
+        font-size: 2.5rem;
+        top: 70%;
+    }
+    .ob {
+        width: 85%;
+        margin-left: 7%;
+        margin-top: 14%;
+    }
+    .ob h5 {
+        font-size: 0.6rem;
+    }
+    .ob_2 {
+        width: 90%;
+        font-size: 0.6rem;
+        margin-left: 7%;
+    } 
+    .ob_3 {
+        width: 90%;
+        margin-left: 7%;
+        margin-top: 15%;
+    }
+    .ob_3 h2 {
+        font-size: 1.8rem;
+    }
+    .ob_3 h5 {
+        font-size: 0.5rem;
+    }
+    .ob_4 {
+        margin-top: 8%;
+        margin-left: 7%;
+    }
+    .ob_4 h3 {
+        display: none;
+    }
+    .jizn h2 {
+        font-size: 1.5rem;
+    }
+    .ob_4 h3 {
+        display: contents;
+        font-size: 0.5rem;
+    }
+    .circleVideo {
+        width: 82%;
+        height: 40%;
+        bottom: 1%;
+        right: -90%;
+    }
+   
+    .opisanie2 {
+        width: 99%;
+    }
+    .ob_2_2 {
+        width: 65%;
+    }
+    .ob_3_2 {
+        width: 99%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mix {
+        font-size: 2.5rem;
+        margin-top: 5%;
+    }
+    .ob_4_2 {
+        margin-top: 20%;
+    }
+    .opisanie.footage {
+        width: 65%;
+    }
+    .comfort {
+        font-size: 2rem;
+        right: -13%;
+        transform: rotate(90deg);
+    }
+    .ofisProdaj h5 {
+        font-size: 0.5rem;
+    }
+    .ofisProdaj h3 {
+        font-size: 0.6rem;
+    }
+    .inputs {
+        line-height: 2;
+        margin-left: 7%;
+    }
+    .inputs a {
+        font-size: 0.6rem;
+    }
+    .foot {
+        margin-left: 7%;
+    }
+    .foo.foo2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .list ul li {
+        font-size: 0.6rem;
+    }
+}

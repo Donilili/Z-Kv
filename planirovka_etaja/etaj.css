@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Sofia+Sans:wght@100;200;300;500;600&family=Spectral+SC:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia Sans', sans-serif;
+  transition: 0.5s;
+}
+
+.main {
+  width: 100%;
+  height: 99vh;
+  background-color: #102323;
+  display: flex;
+}
+
+.box.dark {
+  width: 50%;
+  height: 100%;
+  background-color: #102323;
+  color: #eebd7b;
+}
+
+.box.light {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lines {
+  width: 100%;
+}
+
+.lines.wood {
+  height: 20vh;
+}
+
+.halfOfWood {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.woodKorpus,
+.nazad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nazad {
+  font-weight: 300;
+}
+
+.nazad span {
+  cursor: pointer;
+}
+
+.lines.etaj {
+  height: 51vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.planok {
+  width: 75%;
+  height: 95%;
+}
+
+.rooms {
+  width: 100%;
+  height: 100%;
+}
+
+#room1,
+#room2,
+#room3,
+#room4,
+#room5,
+#room6,
+#room7,
+#room8,
+#room9 {
+  display: none;
+}
+
+#room9 {
+  transform: scale(-1, 1);
+}
+
+.etajCifry {
+  width: 20%;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.etajCifry h6 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.imennoEtaji {
+  width: 45%;
+  height: 6%;
+  margin: 5% auto;
+  letter-spacing: 0.15em;
+  border-radius: 50px 50px 50px 50px;
+  border: solid 0.5px rgba(237, 187, 122, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.imennoEtaji:hover {
+  background-color: #eebd7b;
+  color: rgb(0, 0, 0);
+}
+
+.lines.map {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapSvg {
+  width: 33%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoObEtaje {
+  width: 95%;
+  height: 97%;
+}
+
+#info1,
+#info2,
+#info3,
+#info4,
+#info5,
+#info6,
+#info7,
+#info8,
+#info9 {
+  display: none;
+}
+
+.bug {
+  width: 100%;
+  height: 24.5%;
+  border-bottom: solid 0.5px rgba(237, 187, 122, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metraj,
+.price {
+  font-size: 1.3rem;
+}
+
+.mapSvgMap {
+  width: 100%;
+  height: 100%;
+}
+
+.cube {
+  width: 96%;
+  height: 96%;
+  position: relative;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.korpusSvg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.kursor {
+  cursor: pointer;
+}
+
+
+/* !!! media queries !!! */
+@media (max-width: 374px) and (min-width: 320px) {
+  .lines.wood {
+    height: 10vh;
+  }
+  .halfOfWood {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .box.dark {
+    width: 100%;
+  }
+  .imennoEtaji {
+    font-size: 0.6rem;
+    width: 50%;
+    height: 5%;
+  }
+  .lines.etaj {
+    height: 35vh;
+  }
+  .lines.map {
+    height: 15vh;
+  }
+  .mapSvg.bbb {
+    width: 25%;
+  }
+  .mapSvg.aaa {
+    width: 25%;
+  }
+  .mapSvg.about {
+    width: 45%;
+  }
+  .mapSvg h1 {
+    font-size: 1rem;
+  }
+  .metraj, .price {
+    font-size: 0.9rem;
+  }
+  .rooms {
+    width: 95%;
+    height: 95%;
+  }
+  .box.light {
+    margin: 0 auto;
+  }
+  .home {
+    transform: rotate(90deg);
+  }
+  .korpusSvg {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 425px) and (min-width: 375px) {
+  .lines.wood {
+    height: 10vh;
+  }
+  .halfOfWood {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+  .box.dark {
+    width: 100%;
+  }
+  .imennoEtaji {
+    font-size: 0.6rem;
+    width: 50%;
+    height: 5%;
+  }
+  .lines.etaj {
+    height: 35vh;
+  }
+  .lines.map {
+    height: 15vh;
+  }
+  .mapSvg.bbb {
+    width: 25%;
+  }
+  .mapSvg.aaa {
+    width: 25%;
+  }
+  .mapSvg.about {
+    width: 45%;
+  }
+  .mapSvg h1 {
+    font-size: 1rem;
+  }
+  .metraj, .price {
+    font-size: 0.9rem;
+  }
+  .rooms {
+    width: 95%;
+    height: 95%;
+  }
+  .box.light {
+    margin: 0 auto;
+  }
+  .home {
+    transform: rotate(90deg);
+  }
+  .korpusSvg {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+  .lines.wood {
+    height: 10vh;
+  }
+  .halfOfWood {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+  .box.dark {
+    width: 100%;
+  }
+  .imennoEtaji {
+    font-size: 0.7rem;
+    width: 50%;
+    height: 5%;
+  }
+  .lines.etaj {
+    height: 35vh;
+  }
+  .lines.map {
+    height: 15vh;
+  }
+  .mapSvg.bbb {
+    width: 25%;
+  }
+  .mapSvg.aaa {
+    width: 25%;
+  }
+  .mapSvg.about {
+    width: 45%;
+  }
+  .mapSvg h1 {
+    font-size: 1rem;
+  }
+  .metraj, .price {
+    font-size: 0.9rem;
+  }
+  .rooms {
+    width: 95%;
+    height: 95%;
+  }
+  .box.light {
+    margin: 0 auto;
+  }
+  .home {
+    transform: rotate(90deg);
+  }
+  .korpusSvg {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 2560px) and (min-width: 1500px) {
+  .woodKorpus h3 {
+    font-size: 2rem;
+  }
+  .nazad span {
+    font-size: 1.7rem;
+  }
+  .etajCifry h6 {
+    font-size: 1.3rem;
+  }
+  .imennoEtaji {
+    font-size: 1.5rem;
+  }
+  .mapSvg h1 {
+    font-size: 2.7rem;
+  }
+}

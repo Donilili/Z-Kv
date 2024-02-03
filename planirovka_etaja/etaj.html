@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор Квартиры</title>
+  <script src="https://kit.fontawesome.com/569f85a564.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <link rel="stylesheet" href="etaj.css">
+  <link rel="stylesheet" href="../Main__page/preloader/preload.css">
+  <link rel="icon" href="../img/zoloto77.png">
+</head>
+<body>
+
+  <!-- Прелоадер -->
+  <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+
+  <div class="main">
+    <div class="box dark">
+          <div class="lines wood">
+            <div class="halfOfWood">
+              <div class="woodKorpus"><h3>МЕГА<br>ПЛАЗА</h3></div>
+              <div class="nazad"><i class="fa-solid fa-arrow-left"></i><span onclick="document.location='../index.html'">&nbsp назад</span></div>
+            </div>
+          </div>
+      <div class="lines etaj">
+              <div class="planok"      id="room1"> <img class="rooms" src="../img/room1.svg" alt=""> </div>
+              <div class="planok"      id="room2"> <img class="rooms" src="../img/room2.svg" alt=""> </div>
+              <div class="planok"      id="room3"> <img class="rooms" src="../img/room3.svg" alt=""> </div>
+              <div class="planok"      id="room4"> <img class="rooms" src="../img/room4.svg" alt=""> </div>
+              <div class="planok"      id="room5"> <img class="rooms" src="../img/room5.svg" alt=""> </div>
+              <div class="planok"      id="room6"> <img class="rooms" src="../img/room6.svg" alt=""> </div>
+              <div class="planok"      id="room7"> <img class="rooms" src="../img/room7.svg" alt=""> </div>
+              <div class="planok"      id="room8"> <img class="rooms" src="../img/room8.svg" alt=""> </div>
+              <div class="planok"      id="room9"> <img class="rooms" src="../img/room8.svg" alt=""> </div>
+          <div class="etajCifry">
+              <h6>КВАРТИРЫ</h6>
+              <div class="imennoEtaji" id="nineth"  onmouseover="changeItem9()" onmouseout="rechangeItem9()">09</div>
+              <div class="imennoEtaji" id="eighth"  onmouseover="changeItem8()" onmouseout="rechangeItem8()">08</div>
+              <div class="imennoEtaji" id="seventh" onmouseover="changeItem7()" onmouseout="rechangeItem7()">07</div>
+              <div class="imennoEtaji" id="sixth"   onmouseover="changeItem6()" onmouseout="rechangeItem6()">06</div>
+              <div class="imennoEtaji" id="fifth"   onmouseover="changeItem5()" onmouseout="rechangeItem5()">05</div>
+              <div class="imennoEtaji" id="fourth"  onmouseover="changeItem4()" onmouseout="rechangeItem4()">04</div>
+              <div class="imennoEtaji" id="third"   onmouseover="changeItem3()" onmouseout="rechangeItem3()">03</div>
+              <div class="imennoEtaji" id="second"  onmouseover="changeItem2()" onmouseout="rechangeItem2()">02</div>
+              <div class="imennoEtaji" id="one"     onmouseover="changeItem1()" onmouseout="rechangeItem1()">01</div>
+          </div>
+      </div>
+
+      <div class="lines map">
+            <div class="mapSvg bbb"><svg class="mapSvgMap" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 836.28504 826.39954"><defs><style>.cls-1,.cls-6,.cls-7{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:0.3;isolation:isolate;}.cls-4{clip-path:url(#clip-path-2);}.cls-5{clip-path:url(#clip-path-3);}.cls-6,.cls-7{stroke:#eebd7b;stroke-width:4.58289px;}.cls-7{stroke-linecap:round;stroke-linejoin:round;}</style><clipPath id="clip-path" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="377.367" y="0.00006" width="836.28497" height="56.59607"/></clipPath><clipPath id="clip-path-2" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="369" y="-38" width="853" height="111"/></clipPath><clipPath id="clip-path-3" transform="translate(-377.36697 -2.29372)"><rect class="cls-1" x="377" width="837" height="57"/></clipPath></defs><g class="cls-2"><g class="cls-3"><g class="cls-4"><g class="cls-5"><path class="cls-6" d="M378.45718,5.82324c41.70429,22.55884,153.47171,57.52515,266.90738,16.91913,141.79456-50.75732,258.56653,20.3028,366.99768,27.07044,86.74482,5.41424,169.59882-27.0705,200.18048-43.98957" transform="translate(-377.36697 -2.29372)"/></g></g></g></g><path class="cls-7" d="M775.76176,192.04483a9.16533,9.16533,0,0,0-9.18274-9.153l-75.48334.14161a9.16437,9.16437,0,0,0-9.14746,9.17956l.41706,271.4119a9.16816,9.16816,0,0,0,9.17492,9.152l273.6493-.24292a9.15983,9.15983,0,0,0,9.15747-9.18412l-.3996-181.78436a9.16584,9.16584,0,0,0-9.18274-9.14563l-75.48016.1416a9.166,9.166,0,0,0-9.14881,9.18872l.21857,87.94242a9.16576,9.16576,0,0,1-9.174,9.18866l-86.01758-.07926a9.16586,9.16586,0,0,1-9.1571-9.15344Z" transform="translate(-377.36697 -2.29372)"/><path class="cls-7" d="M1187.14784,825.47146l-212.69449.42621-84.63129.16034a9.166,9.166,0,0,1-9.18274-9.16577l.00415-256.95331a9.1663,9.1663,0,0,1,9.14881-9.16577l75.47375-.14209a9.16571,9.16571,0,0,1,9.18317,9.17493L974.287,722.87894a9.16568,9.16568,0,0,0,9.19787,9.17492l109.73081-.385a9.16862,9.16862,0,0,0,9.1337-9.17041l-.05133-393.20431a9.16542,9.16542,0,0,1,9.14834-9.16715l75.48789-.1416a9.16565,9.16565,0,0,1,9.18295,9.15933l.15835,315.50882.211,158.10968c-.10374,12.82189.8998,20.71484-9.33871,22.70819" transform="translate(-377.36697 -2.29372)"/><path class="cls-7" d="M419.36717,548.32126,390.54075,168.54373a9.163,9.163,0,0,1,9.13831-9.85956h74.426a9.16366,9.16366,0,0,1,9.13831,8.47187l28.92725,381.06445a9.02682,9.02682,0,0,0,.3894,2.03479l54.399,174.31927a9.16138,9.16138,0,0,0,8.74865,6.439h100.104a9.16617,9.16617,0,0,0,9.16577-9.16577V558.42654a9.16325,9.16325,0,0,1,9.16577-9.16577h73.18915a9.16442,9.16442,0,0,1,9.16577,9.16577V817.23605a9.16738,9.16738,0,0,1-9.16577,9.16577H506.25413a9.17051,9.17051,0,0,1-8.80835-6.62689L419.69712,550.1636A9.29932,9.29932,0,0,1,419.36717,548.32126Z" transform="translate(-377.36697 -2.29372)"/></svg></div>
+            <div class="mapSvg aaa"><h1>ЗОЛОТОЙ<br>КВАДРАТ</h1></div>
+
+            <div class="mapSvg about">
+                <div class="infoObEtaje" id="info1">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>11</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>2</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">47.31</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">4 021 350</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info2">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>12</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>2</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">44.98</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">3 823 300</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info3">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>13</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>2</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">43.30</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">3 680 500</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info4">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>14</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>3</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">61.05</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">4 151 400</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info5">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>15</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>2</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">43.25</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">3 676 250</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info6">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>16</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>1</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">25.70</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">2 184 500</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info7">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>17</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>1</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">26.05</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">2 214 250</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info8">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>18</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>3</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">58.09</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">4 937 650</h6></div>
+                </div>
+
+                <div class="infoObEtaje" id="info9">
+                  <div class="bug"><h6>НОМЕР КВ</h6><h6>19</h6></div>
+                  <div class="bug"><h6>КОМНАТ</h6><h6>3</h6></div>
+                  <div class="bug"><h6>ПЛОЩАДЪ, м.кв</h6><h6 class="metraj">58.09</h6></div>
+                  <div class="bug"><h6>ЦЕНА. СОМ</h6><h6 class="price">4 937 650</h6></div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="box light">
+        <div class="cube">
+          <img class="home" src="../img/etaj.svg" alt="">
+          
+          <div class="korpusSvg">
+              <svg class="inCubeSvg" width="100%" height="100%" viewBox="0 0 186 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0V2"             stroke="none"/>
+                <path d="M184 0H186V2"         stroke="none"/>
+                <path d="M185.5 284V285.5H184" stroke="none"/>
+                <path d="M1.5 285.5H0V284"     stroke="none"/>
+                <path class="kursor" id="kv_1" onmouseover="changeEtaj1()"   onmouseout="rechangeEtaj1()" fill="rgba(0, 0, 0, 0)" d="M84.5 241V220.5H16.5V252.5H1V281H15V285H82.5L84.5 283V251" stroke="none"/>
+                <path class="kursor" id="kv_2" onmouseover="changeEtaj2()"   onmouseout="rechangeEtaj2()" fill="rgba(0, 0, 0, 0)" d="M102 254.5V284H170V254.5H184.5V224.5H102V244.5" stroke="none"/>
+                <path class="kursor" id="kv_3" onmouseover="changeEtaj3()"   onmouseout="rechangeEtaj3()" fill="rgba(0, 0, 0, 0)" d="M102 204V223H184.5V196H170.5V167.5H102V191.5V193" stroke="none"/>
+                <path class="kursor" id="kv_4" onmouseover="changeEtaj4()"   onmouseout="rechangeEtaj4()" fill="rgba(0, 0, 0, 0)" d="M84.5 161V195.5H16V139.5H1.5V109.5H84.5V149.5" stroke="none"/>
+                <path class="kursor" id="kv_5" onmouseover="changeEtaj5()"   onmouseout="rechangeEtaj5()" fill="rgba(0, 0, 0, 0)" d="M102 143.5V166.5H170V138H185.5V110H102V132V133" stroke="none"/>
+                <path class="kursor" id="kv_6" onmouseover="changeEtaj6()"   onmouseout="rechangeEtaj6()" fill="rgba(0, 0, 0, 0)" d="M102 103V108.5H185V79.5H102V93.5" stroke="none"/>
+                <path class="kursor" id="kv_7" onmouseover="changeEtaj7()"   onmouseout="rechangeEtaj7()" fill="rgba(0, 0, 0, 0)" d="M84.5 103.5V108.5H1V79.5H84.5V93.5" stroke="none"/>
+                <path class="kursor" id="kv_8" onmouseover="changeEtaj8()"   onmouseout="rechangeEtaj8()" fill="rgba(0, 0, 0, 0)" d="M102.5 68V78.5H170V18L168 16V2.5H141V0H93V51H102.5V58" stroke="none"/>
+                <path class="kursor" id="kv_9" onmouseover="changeEtaj9()"   onmouseout="rechangeEtaj9()" fill="rgba(0, 0, 0, 0)" d="M84 68V78.5H16V17H18.5V3H44.5V0H92.5V51.5H84V58" stroke="none"/>
+              </svg>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="../Main__page/preloader/preload.js"></script>
+  <script src="./Js/hoverOnElements.js"></script>
+  <script src="./Js/etaj.js"></script>
+</body>
+</html>
